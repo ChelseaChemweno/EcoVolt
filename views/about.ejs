@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>About Us</title>
+    <link rel="stylesheet" href="stylesheets/about.css" />
+  </head>
+
+  <body>
+    <!-- //put the image without the background -->
+
+    <nav><%- include("_nav.ejs") %></nav>
+
+    <main>
+      <div class="SideNav">
+        <a href="Our Story">Our Story</a>
+        <a href="The Team">The Team</a>
+        <a href="What We Do">What We Do</a>
+        <a href="Why Choose Us">Why Choose Us</a>
+      </div>
+      <div class="intro">
+        <h2>
+          Save Money, Save the Planet: Choose EcoVolt for Sustainable Energy
+          Solutions
+        </h2>
+
+        <!-- <div>Input a compelling image or video </div> -->
+      </div>
+      <div class="mission_vision">
+        <h2>Mission</h2>
+        <p>
+          "EcoVolt is dedicated to pioneering innovative and accessible
+          renewable energy solutions, revolutionizing the way we power our lives
+          and create a lasting impact on the environment."
+        </p>
+      </div>
+
+      <div id="OurStoryContent">
+        <h2>Our Story</h2>
+        <p>
+          EcoVolt's story began with a spark of rebellion against dependence on
+          fossil fuels. Founded by a band of environmental enthusiasts, the
+          company set out to make clean energy a reality, not just a dream.
+          Through relentless research and development, EcoVolt pioneered
+          innovative solutions, making renewable energy more accessible and
+          user-friendly. Their dedication to affordability empowered individuals
+          and businesses to embrace a sustainable future. Today, EcoVolt stands
+          as a frontrunner, a testament to the power of innovation in
+          revolutionizing the way we power our lives and leaving a lasting
+          positive impact on the planet.
+        </p>
+      </div>
+      <div class="TheTeamContent">
+        <h2>Meet Our Team!</h2>
+        <div class="team-members">
+          <div class="team-member">
+            <h3>Chelsea Chemweno</h3>
+            <p>Founder, CEO & Director</p>
+            </div>
+          <div class="team-member">
+            <h3>David Lee</h3>
+            <p>Chief Technology Officer</p>
+            </div>
+          <div class="team-member">
+            <h3>Sarah Jones</h3>
+            <p>Project Manager</p>
+            </div>
+          <div class="team-member">
+            <h3>Michael Brown</h3>
+            <p>Sales Director</p>
+            </div>
+          <div class="team-member">
+            <h3>Emily Garcia</h3>
+            <p>Marketing Manager</p>
+            </div>
+          <div class="team-member">
+            <h3>Chen Wu</h3>
+            <p>Electrical Engineer</p>
+            </div>
+          <div class="team-member">
+            <h3>Antonio Rodriguez</h3>
+            <p>Customer Service Representative</p>
+            </div>
+          <div class="team-member">
+            <h3>Katherine Miller</h3>
+            <p>Sustainability Analyst</p>
+            </div>
+        </div>
+      </div>
+      
+      
+        <div id="WhatWeDoContent">
+          <h2>What We Do</h2>
+          <p>
+            EcoVolt offers a comprehensive range of renewable energy solutions
+            and services to meet your unique needs. We specialize in:
+          </p>
+          <div class="solutions">
+            <div class="solution-item">
+              <h3>Solar Panel Installation</h3>
+              <p>
+                Harness the power of the sun with our high-efficiency solar
+                panel systems, designed to reduce your electricity bills and
+                environmental impact.
+              </p>
+            </div>
+
+            <div class="solution-item">
+              <h3>Wind Turbine Installation</h3>
+              <p>
+                Harness the power of the wind with our expert wind turbine
+                installation services. We can help you reduce your reliance on
+                fossil fuels and generate clean energy for your home or
+                business.
+              </p>
+            </div>
+
+            <div class="solution-item">
+              <h3>Battery Storage Solutions</h3>
+              <p>
+                Store excess solar energy for later use with our reliable
+                battery storage systems, maximizing your self-sufficiency.
+                (Consider adding details on specific battery technologies here)
+              </p>
+            </div>
+          </div>
+
+          <div class="services">
+            <h4>Our Services Include:</h4>
+            <ul>
+              <li>
+                <a href="Free consultations and energy audits"
+                  >Free consultations and energy audits</a
+                >
+              </li>
+              <li>
+                <a href="System design and engineering"
+                  >System design and engineering</a
+                >
+              </li>
+              <li>
+                <a href="Permitting and approval assistance"
+                  >Permitting and approval assistance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Equipment procurement and
+               installation"
+                  >Equipment procurement and installation</a
+                >
+              </li>
+              <li>
+                <a href="System monitoring and maintenance"
+                  >System monitoring and maintenance</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Financing options and incentives
+                guidance"
+                  >Financing options and incentives guidance</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <p>
+            We understand that every project is unique. We work closely with you
+            to design a customized solution that fits your budget and goals. Our
+            experienced project managers ensure a seamless and efficient
+            implementation process, keeping you informed every step of the way.
+          </p>
+
+          <div class="join-ecovolt">
+            <h2>Join the EcoVolt Movement!</h2>
+            <p>
+              At EcoVolt, we believe in a future powered by clean energy. Let us
+              help you make the switch and experience the benefits of a
+              sustainable energy solution. Reduce your carbon footprint, save
+              money on electricity bills, and invest in a greener tomorrow.
+            </p>
+            <form action="form-handler.php" method="post">
+              <label for="email">Get Your Free Consultation:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email address"
+              />
+              <button type="submit">Let's Go Green!</button>
+            </form>
+          </div>
+        </div>
+
+        <div id="WhyChooseUsContent">
+          <h2>Why Choose Us</h2>
+          <p>
+            At EcoVolt, we're passionate about providing innovative and
+            efficient renewable energy solutions that empower individuals and
+            businesses to make a positive impact on the environment. We believe
+            everyone deserves access to clean energy, which is why we offer
+            competitive pricing and flexible financing options. Our team of
+            experienced engineers, project managers, and sustainability analysts
+            ensures every project is completed with expertise and a focus on
+            long-term value. We're dedicated to exceptional customer service,
+            providing support throughout your journey with renewable energy. By
+            choosing EcoVolt, you're not just reducing your carbon footprint,
+            you're partnering with a company committed to a sustainable future.
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

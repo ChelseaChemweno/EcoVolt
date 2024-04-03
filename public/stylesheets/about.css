@@ -1,0 +1,227 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Header Styles */
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: #08c06a;
+}
+nav a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  size: 20px;
+}
+.mission_vision {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.mission_vision p {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.SideNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  list-style: none;
+  padding: 20px; 
+  margin: 0; 
+ 
+}
+
+.SideNav a {
+  text-decoration: none;
+  color: #7c5a11;
+  padding: 10px 15px;
+  font-size: 1.0rem;
+  text-align: center;
+}
+
+.SideNav a:hover {
+  background-color: #e0e0e0; /
+}
+#OurStoryContent { 
+text-align: center;
+width: 100%;
+font-size: 1.2rem;
+line-height: 1.5;
+
+
+}
+/* Meet Our Team Styles */
+
+.TheTeamContent {
+  padding: 20px;
+}
+
+.TheTeamContent h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Team Members Container with Flexbox Properties */
+
+.team-members {
+  display: flex;
+  flex-wrap: wrap; /* This allows for wrapping onto multiple rows */
+  justify-content: space-between; /* Distributes content horizontally */
+ 
+}
+
+/* Individual Team Member Sections */
+
+.team-member {
+  width: 50%; /* Adjust width as needed for desired layout */
+  padding: 20px; /* Padding for content within each member section */
+  margin-bottom: 10px; /* Optional: Add some margin for spacing */
+  border: none; /* Remove border for cleaner look */
+  text-align: center; /* Center content within each team member section */
+}
+
+.team-member h3 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 1.2em; /* Adjust font size for headings */
+}
+
+.team-member p {
+  line-height: 1.5; /* Adjust line-height for readability */
+  font-size: 0.9em; /* Adjust font size for body text */
+}
+
+/* Optional: Add hover effect for visual interest (consider accessibility) */
+
+.team-member:hover {
+  background-color: #f5f5f5; /* Lighten background on hover */
+  cursor: pointer; /* Indicate clickable element */
+}
+
+
+
+
+
+
+
+#WhatWeDoContent {
+  padding: 20px;
+}
+
+#WhatWeDoContent h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#WhatWeDoContent p {
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  font-size: 1.2rem
+}
+
+.solutions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+  margin-bottom: 20px;
+}
+
+.solution-item {
+  width: 30%; 
+  padding: 10px;
+  border: 1px solid #ddd; /* Add a light border for separation */
+  margin-bottom: 15px;
+}
+
+.solution-item h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.services {
+  margin-bottom: 20px;
+}
+
+.services h4 {
+  margin-bottom: 10px;
+}
+
+.services ul {
+  list-style: none;
+  padding: 0;
+}
+
+.services li {
+ 
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+.services li a {
+  text-decoration: none;
+  margin-right: 10px;
+  color: #08c06a; 
+}
+
+.join-ecovolt {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.join-ecovolt h2 {
+  margin-bottom: 10px;
+}
+
+.join-ecovolt p {
+  margin-bottom: 20px;
+}
+
+.join-ecovolt form {
+  display: inline-block; /* Allow text to wrap around the form */
+}
+
+.join-ecovolt label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.join-ecovolt input[type="email"] {
+  padding: 10px;
+  width: 200px; /* Adjust width as needed */
+}
+
+.join-ecovolt button[type="submit"] {
+  background-color: #08c06a; /* Match green color from header? */
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+/* Styles for "Why Choose Us" section */
+
+#WhyChooseUsContent {
+  padding: 20px;
+}
+
+#WhyChooseUsContent h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#WhyChooseUsContent p {
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>EcoVolt: Powering a Sustainable Future</title>
+    <link rel="stylesheet" href="stylesheets/signup.css" />
+  </head>
+
+  <body>
+    <header>
+      <!-- //put the image without the background -->
+      <nav><%- include("_nav.ejs") %></nav>
+    </header>
+
+    <div class="intro">
+      <h3>Sign Up</h3>
+      <h1>Join the Green Movement! Sign Up Today</h1>
+      <p>
+        Be a part of the solution and switch to renewable energy. Fill out the
+        form below to get started
+      </p>
+    </div>
+    <form action="form-handler.php" method="post">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone">Phone Number (Optional):</label>
+      <input type="text" id="phone" name="phone" />
+
+      <label for="service">Interested In (check all that apply):</label>
+      <input type="checkbox" id="solar" name="service[]" value="solar" /> Solar
+      Power
+      <input type="checkbox" id="wind" name="service[]" value="wind" /> Wind
+      Power
+      <input type="checkbox" id="battery" name="service[]" value="battery" />
+      Battery Storage
+      <br />
+      <input type="checkbox" id="other" name="service[]" value="other" /> Other
+      (Please specify in the message)
+
+      <label for="message">Message (Optional):</label>
+      <textarea id="message" name="message" rows="4"></textarea>
+
+      <button type="submit">Sign Up Now!</button>
+    </form>
+  </body>
+</html>

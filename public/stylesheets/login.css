@@ -1,0 +1,76 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+/* Navigation Bar Styles */
+
+nav {
+  margin: 0;
+  display: flex; /* Arrange navigation elements horizontally */
+  justify-content: flex-start; /* Align items to the left */
+  padding: 20px;
+  background-color: #08c06a; /* EcoVolt green color */
+}
+
+nav a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  size: 20px;
+}
+
+/* Login Form Styles */
+
+.login-form {
+  width: 350px;
+  margin: 50px auto; /* Center the form horizontally */
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 4px; /* Rounded corners for a softer look */
+  background-color: #f5f5f5; /* Light background color */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow */
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px; /* Font size for login title */
+}
+
+.login-form label {
+  display: block; /* Display labels on separate lines */
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px; /* Rounded corners for input fields */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #4caf50; /* EcoVolt green color */
+  color: white;
+  border: none;
+  border-radius: 3px; /* Rounded corners for button */
+  cursor: pointer; /* Indicate clickable element */
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+}
+
+.login-form a {
+  margin-top: 20px;
+  color: #ccc; /* Light gray color */
+  text-decoration: none; /* Remove underline */
+}
