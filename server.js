@@ -33,7 +33,7 @@ app.get("/Home", (req, res) => {
 app.get("/about", (req, res) => {
   res.render("about.ejs");
 });
-app.get("/learningCentre", (req, res) => {
+app.get("/learning_Centre", (req, res) => {
   res.render("learningCentre.ejs");
 });
 app.get("/testimonials", (req, res) => {
