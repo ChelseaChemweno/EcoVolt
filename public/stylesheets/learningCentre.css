@@ -5,20 +5,17 @@ body {
   margin: 0;
 }
 
-header {
-  background-color: #f0f0f0;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  width: 150px;
-}
-
 nav {
-  /* Styles for your navigation bar (replace with your styles) */
+  display: flex;
+  justify-content: flex-start;
+  padding: 20px;
+  background-color: #08c06a;
+}
+nav a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  size: 20px;
 }
 
 main {
@@ -57,6 +54,7 @@ main {
 .category-grid {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 20px;
   justify-content: space-around;
 }
 
@@ -81,4 +79,53 @@ main {
   border: 1px solid #28a745;
   border-radius: 4px;
   transition: background-color;
+}
+.course-categories {
+  padding: 50px 0;
+}
+
+.course-categories h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.course-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.course-card {
+  width: 30%;
+  margin: 10px;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.course-card h3 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.course-price {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.course-description {
+  font-size: 0.9em;
+  margin-bottom: 15px;
+}
+
+.enroll-button {
+  background-color: #28a745; /* Green color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
 }
