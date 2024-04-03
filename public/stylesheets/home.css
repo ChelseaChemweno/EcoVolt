@@ -66,3 +66,28 @@ main {
 .intro button:hover {
   background-color: #c7a55e; /* darker green on hover */
 }
+.call-to-action {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #fff;
+  padding: 10px 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
+  z-index: 10; /* Ensure the button stays on top */
+}
+
+#start-test {
+  background-color: #28a745; /* Green color */
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.8em; /* Reduce font size */
+  font-weight: bold; /* Make text bolder */
+}
+
+#start-test:hover {
+  background-color: #1e823c; /* Darker green on hover */
+}
