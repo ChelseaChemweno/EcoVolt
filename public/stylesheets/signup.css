@@ -19,7 +19,7 @@ nav a {
 
 h1 {
   text-align: center;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 p {
@@ -28,9 +28,10 @@ p {
 }
 
 form {
-  max-width: 500px;
-  margin: 50px auto;
+  /* max-width: 500px;
+  margin: 50px auto; */
   padding: 20px;
+  margin-top: 0px;
   border-radius: 5px;
 }
 
@@ -58,14 +59,15 @@ input[type="checkbox"] {
   margin-right: 5px;
 }
 
-.button {
+button {
+  display: block;
   background-color: #4caf50; /* Green */
   border: none;
   color: white;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
+
   font-size: 16px;
   margin-top: 10px;
   cursor: pointer;
