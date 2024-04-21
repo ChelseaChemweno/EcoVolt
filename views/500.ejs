@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>500 -Server Error<title>
+
+    <link rel="stylesheet" href="/styles/index.css" />
+    <link rel="shortcut icon" href="images/3.Parking" type="image/x-icon" />
+  </head>
+  <body>
+    <%- include("_header.ejs")%>
+    
+    <main>
+        <h1>500 -Server Error</h1>
+        <h2><%- locals.message %> </h2>
+        <a href="/">Go back to the Home Page</a>
+    </main>
+    <%- include("_footer.ejs")%>
+  </body>
+</html>
