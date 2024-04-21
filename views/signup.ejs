@@ -21,31 +21,145 @@
         form below to get started
       </p>
     </div>
-    <form action="form-handler.php" method="post">
-      <label for="name">Full Name:</label>
-      <input type="text" id="name" name="name" required />
-
-      <label for="email">Email Address:</label>
-      <input type="email" id="email" name="email" required />
-
-      <label for="phone">Phone Number :</label>
-      <input type="text" id="phone" name="phone" />
-
-      <label for="service">Interested In (check all that apply):</label>
-      <input type="checkbox" id="solar" name="service[]" value="solar" /> Solar
-      Power
-      <input type="checkbox" id="wind" name="service[]" value="wind" /> Wind
-      Power
-      <input type="checkbox" id="battery" name="service[]" value="battery" />
-      Battery Storage
+    <% if(locals.error){ %>
+    <p style="color: orangered"><%=locals.errMessage%></p>
+    <form action="/signup" method="post">
+      <div>
+        <label for="name">Full Name:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          value="<%=locals.prevInput.name%>"
+          required
+        />
+      </div>
+      <div>
+        <label for="email">Email Address:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          value="<%=locals.prevInput.email%>"
+          required
+        />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input
+          type="password"
+          name="password"
+          id="password"
+          value="<%=locals.prevInput.password%>"
+        />
+      </div>
+      <div>
+        <label for="confirmPass">Confirm Password</label>
+        <input
+          type="confirmPass"
+          name="confirmPass"
+          id="confirmPass"
+          value="<%=locals.prevInput.confirmPass%>"
+        />
+      </div>
+      <div>
+        <label for="phone">Phone Number :</label>
+        <input
+          type="text"
+          id="phone"
+          name="phone"
+          value="<%=locals.prevInput.phone%>"
+        />
+      </div>
+      <div>
+        <label for="service">Interested In (check all that apply):</label>
+        <input
+          type="checkbox"
+          id="solar"
+          name="solar"
+          value="<%=locals.prevInput.solar%>"
+        />
+        Solar Power
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="wind"
+          name="wind"
+          value="<%=locals.prevInput.wind%>"
+        />
+        Wind Power
+      </div>
+      <div>
+        <input
+          type="checkbox"
+          id="battery"
+          name="battery"
+          value="<%=locals.prevInput.battery%>"
+        />
+        Battery Storage
+      </div>
       <br />
-      <input type="checkbox" id="other" name="service[]" value="other" /> Other
-      (Please specify in the message)
+      <div>
+        <input
+          type="checkbox"
+          id="other"
+          name="other"
+          value="<%=locals.prevInput.other%>"
+        />
+        Other (Please specify in the message)
 
-      <label for="message">Message (Optional):</label>
-      <textarea id="message" name="message" rows="4"></textarea>
-
+        <label for="message">Message (Optional):</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+      </div>
       <button type="submit">Sign Up Now!</button>
     </form>
+    <%}else{%>
+    <form action="/signup" method="post">
+      <div>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div>
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password"id="password" />
+      </div>
+      <div>
+        <label for="confirmPass">Confirm Password</label>
+        <input type="password"name="confirmPass" id="confirmPass"/>
+      </div>
+      <div>
+        <label for="phone">Phone Number :</label>
+        <input type="text" id="phone" name="phone" />
+      </div>
+      <div>
+        <label for="service">Interested In (check all that apply):</label>
+        <input type="checkbox" id="solar" name="solar" />
+        Solar Power
+      </div>
+      <div>
+        <input type="checkbox" id="wind" name="wind" />
+        Wind Power
+      </div>
+      <div>
+        <input type="checkbox" id="battery" name="battery" />
+        Battery Storage
+      </div>
+      <br />
+      <div>
+        <input type="checkbox" id="other" name="other" />
+        Other (Please specify in the message)
+        <label for="message">Message (Optional):</label>
+        <textarea id="message" name="message" rows="4"></textarea>
+        <br />
+        <button type="submit">Sign Up Now!</button>
+        <br />
+    </form>
+    <% } %>
   </body>
+  <nav><%- include("_footer.ejs") %></nav>
 </html>
