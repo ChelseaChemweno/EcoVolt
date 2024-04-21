@@ -5,10 +5,16 @@ html {
   padding: 0;
   font-family: sans-serif;
 }
+body {
+  position: relative; /* Needed for absolute positioning */
+  height: 100vh; /* Set body height to 100% viewport height */
+  margin: 0; /* Remove default body margin */
+}
+
 nav {
   display: flex;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 10px;
   background-color: #08c06a;
 }
 nav a {
@@ -27,7 +33,18 @@ nav a {
 
 /* Main Section Styles */
 main {
-  padding: 2rem;
+  padding: 2rem; /* Adjust padding for content spacing */
+}
+
+#myVideo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Ensure video appears behind content */
+  overflow: hidden;
 }
 
 .intro {
@@ -38,14 +55,18 @@ main {
 .intro h1 {
   margin-bottom: 1rem;
   font-size: 2rem;
+  color: white;
 }
 
 .intro p {
   margin-bottom: 1rem;
   font-size: 1.2rem;
   line-height: 1.5;
+  color: white;
 }
-
+h3 {
+  color: white;
+}
 .intro button {
   background-color: #08c06a;
   color: white;
@@ -67,27 +88,130 @@ main {
   background-color: #c7a55e; /* darker green on hover */
 }
 .call-to-action {
-  position: fixed;
+  position: fixed; /* Ensures button stays visible when scrolling */
   top: 20px;
   right: 20px;
-  background-color: #fff;
-  padding: 10px 15px;
-  border-radius: 4px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add a slight shadow */
-  z-index: 10; /* Ensure the button stays on top */
-}
+  background-color: #4caf50; /* Green color */
 
-#start-test {
-  background-color: #28a745; /* Green color */
-  color: #fff;
-  padding: 5px 10px;
+  padding: 10px 15px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
-  font-size: 0.8em; /* Reduce font size */
-  font-weight: bold; /* Make text bolder */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: all 0.2s ease-in-out; /* Smooth hover effect */
 }
 
-#start-test:hover {
-  background-color: #1e823c; /* Darker green on hover */
+.call-to-action:hover {
+  background-color: #c7a55e; /* Darker green on hover */
+}
+.call-to-action a {
+  color: white;
+  text-decoration: none;
+}
+.learnmore {
+  margin: 50px;
+  padding: 10x;
+  background-color: white;
+  border-radius: 20px;
+}
+
+.learnmore p {
+  margin-top: 2rem;
+  margin-bottom: 1rem; /* Add space between paragraph and button */
+  color: black;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+.learnmore button {
+  margin: 20px;
+}
+
+.learnmore button:hover {
+  background-color: #c7a55e;
+}
+.hero {
+  display: flex; /* Enables flexbox layout */
+  align-items: center; /* Vertically aligns content within the flexbox */
+}
+
+.hero h2 {
+  font-size: 2rem; /* Adjust font size as needed */
+  margin-bottom: 1rem; /* Add some space after the heading */
+  color: #333; /* Set text color */
+  order: 1; /* Move the heading to the first position in the flexbox order */
+  margin-left: 1rem; /* Add some space between heading and paragraph */
+}
+
+.hero img {
+  max-width: 500px; /* Adjust image width as needed */
+  border-radius: 5px; /* Add a rounded corner effect to the image */
+  order: 0; /* Move the image to the second position in the flexbox order */
+  margin-top: 0;
+}
+
+.hero p {
+  display: inline;
+  margin-right: -50px;
+  font: size 1px;
+  line-height: 2;
+  text-align: start;
+  padding: 60px;
+
+  color: white; /* Set text color to white for better readability on a potentially dark background (optional) */
+  background-color: #08c06a;
+  border-radius: 20px;
+}
+.hero button {
+  background-color: #c7a55e;
+  padding: 15px 25px;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+.hero button a {
+  color: black;
+  text-decoration: none;
+}
+.contactus {
+  margin: 2rem auto;
+  border: 1px solid #ddd;
+  border-radius: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  width: 70%;
+}
+
+.contactus label {
+  display: block;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.contactus input[type="text"],
+.contactus input[type="email"],
+.contactus input[type="tel"] {
+  width: 50%;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+.contactus input[type="tel"] .contactus textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.contactus button {
+  background-color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.contactus button a {
+  color: white;
 }

@@ -1,0 +1,84 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  position: relative; /* Needed for absolute positioning */
+  height: 100vh; /* Set body height to 100% viewport height */
+  margin: 0; /* Remove default body margin */
+}
+nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #08c06a;
+}
+nav a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  size: 20;
+}
+h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Project categories */
+.project-categories {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.project-categories ul {
+  list-style: none;
+  padding: 0;
+}
+
+.project-categories li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.project-categories a {
+  text-decoration: none;
+  color: black;
+  size: 5rem;
+}
+
+/* Project list */
+.project-list {
+  margin-bottom: 2rem;
+}
+
+.project {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+.project:hover {
+  background-color: #c0884a;
+}
+
+.project h4 {
+  margin-bottom: 5px;
+}
+
+.project p {
+  margin-bottom: 5px;
+}
+
+/* Images (adjust as needed) */
+.project img {
+  max-width: 200px; /* Ensure image doesn't exceed link width */
+  height: auto; /* Maintain image aspect ratio */
+  /* object-fit: cover; Resize image to fill container while maintaining aspect ratio, cropping if necessary */
+  display: block; /* Treat image as a block element for full-width display within the link */
+  margin-bottom: 10px; /* Add some space below the image */
+}
+.project-description {
+  display: flex;
+}

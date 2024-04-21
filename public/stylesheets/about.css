@@ -10,7 +10,7 @@ html {
 nav {
   display: flex;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 10px;
   background-color: #08c06a;
 }
 nav a {
@@ -29,39 +29,22 @@ nav a {
   font-size: 1.2rem;
   line-height: 1.5;
 }
-.SideNav {
-  display: flex;
-  flex-direction: row;
-  justify-content: end;
-  list-style: none;
-  padding: 20px; 
-  margin: 0; 
- 
-}
 
-.SideNav a {
-  text-decoration: none;
-  color: #7c5a11;
-  padding: 10px 15px;
-  font-size: 1.0rem;
+#OurStoryContent {
   text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+  line-height: 1.5;
 }
-
-.SideNav a:hover {
-  background-color: #e0e0e0; /
-}
-#OurStoryContent { 
-text-align: center;
-width: 100%;
-font-size: 1.2rem;
-line-height: 1.5;
-
-
+h2 {
+  padding: 10px;
+  text-align: center;
+  color: black;
 }
 /* Meet Our Team Styles */
 
 .TheTeamContent {
-  padding: 20px;
+  /* background-color: #08c06a; */
 }
 
 .TheTeamContent h2 {
@@ -73,19 +56,28 @@ line-height: 1.5;
 
 .team-members {
   display: flex;
-  flex-wrap: wrap; /* This allows for wrapping onto multiple rows */
+  flex-direction: row; /* This allows for wrapping onto multiple rows */
   justify-content: space-between; /* Distributes content horizontally */
- 
+  width: 75%;
 }
 
 /* Individual Team Member Sections */
 
 .team-member {
-  width: 50%; /* Adjust width as needed for desired layout */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 10%; /* Adjust width as needed for desired layout */
   padding: 20px; /* Padding for content within each member section */
   margin-bottom: 10px; /* Optional: Add some margin for spacing */
   border: none; /* Remove border for cleaner look */
   text-align: center; /* Center content within each team member section */
+  margin-left: 15px;
+}
+.team-member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
 }
 
 .team-member h3 {
@@ -102,15 +94,9 @@ line-height: 1.5;
 /* Optional: Add hover effect for visual interest (consider accessibility) */
 
 .team-member:hover {
-  background-color: #f5f5f5; /* Lighten background on hover */
+  background-color: #c7a55e; /* Lighten background on hover */
   cursor: pointer; /* Indicate clickable element */
 }
-
-
-
-
-
-
 
 #WhatWeDoContent {
   padding: 20px;
@@ -124,18 +110,18 @@ line-height: 1.5;
 #WhatWeDoContent p {
   line-height: 1.5;
   margin-bottom: 1rem;
-  font-size: 1.2rem
+  font-size: 1.2rem;
 }
 
 .solutions {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
   margin-bottom: 20px;
 }
 
 .solution-item {
-  width: 30%; 
+  width: 30%;
   padding: 10px;
   border: 1px solid #ddd; /* Add a light border for separation */
   margin-bottom: 15px;
@@ -144,6 +130,9 @@ line-height: 1.5;
 .solution-item h3 {
   margin-top: 0;
   margin-bottom: 10px;
+}
+#windTurbine {
+  background-color: #08c06a;
 }
 
 .services {
@@ -160,7 +149,6 @@ line-height: 1.5;
 }
 
 .services li {
- 
   margin-bottom: 5px;
   line-height: 1.5;
 }
@@ -168,7 +156,7 @@ line-height: 1.5;
 .services li a {
   text-decoration: none;
   margin-right: 10px;
-  color: #08c06a; 
+  color: #08c06a;
 }
 
 .join-ecovolt {
@@ -206,5 +194,3 @@ line-height: 1.5;
   cursor: pointer;
   margin-left: 10px;
 }
-
-

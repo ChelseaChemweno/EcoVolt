@@ -1,0 +1,54 @@
+footer {
+  padding: 20px; /* Add some padding */
+  display: flex; /* Make footer content flexible */
+  justify-content: space-between; /* Align items horizontally */
+  align-items: center; /* Align items vertically */
+  margin-top: 0px;
+}
+
+.sign-off {
+  color: #333; /* Text color */
+  font-size: 0.8rem; /* Adjust font size */
+}
+
+.socials {
+  display: flex; /* Make social icons a row */
+}
+
+.socials a {
+  margin-left: 1rem; /* Space between social icons */
+  color: inherit; /* Inherit text color from footer */
+}
+
+.socials a:hover {
+  color: #007bff; /* Blue color on hover */
+}
+
+ion-icon {
+  font-size: 2rem; /* Adjust icon size */
+}
+.services a {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  color: #333;
+}
+.Quote {
+  background-color: white;
+  padding: 10px;
+  margin-left: 100px;
+  border-radius: 20px;
+}
+
+.Quote button {
+  background-color: #08c06a;
+  border: none;
+  padding: 20px;
+  border-radius: 50px;
+  margin-left: 20px;
+}
+.Quote button a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}

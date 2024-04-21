@@ -8,7 +8,7 @@ body {
 nav {
   display: flex;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 10px;
   background-color: #08c06a;
 }
 nav a {

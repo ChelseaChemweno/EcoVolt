@@ -10,7 +10,7 @@ nav {
   margin: 0;
   display: flex; /* Arrange navigation elements horizontally */
   justify-content: flex-start; /* Align items to the left */
-  padding: 20px;
+  padding: 10px;
   background-color: #08c06a; /* EcoVolt green color */
 }
 
@@ -45,7 +45,7 @@ nav a {
   font-weight: bold;
 }
 
-.login-form input[type="text"],
+.login-form input[type="email"],
 .login-form input[type="password"] {
   width: 100%;
   padding: 10px;

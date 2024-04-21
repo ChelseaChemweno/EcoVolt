@@ -1,0 +1,176 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  position: relative; /* Needed for absolute positioning */
+  height: 100vh; /* Set body height to 100% viewport height */
+  margin: 0; /* Remove default body margin */
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #08c06a;
+}
+nav a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  size: 20px;
+}
+.Service {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.EnergyGenrationStorage {
+  width: 50%;
+  padding: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  background-color: white;
+}
+.EnergyEfficiency {
+  width: 50%;
+  padding: 30px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 30px;
+  box-shadow: black;
+  background-color: white;
+}
+.SmartHomeTechnology {
+  width: 50%;
+  padding: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
+  border-radius: 30px;
+  background-color: white;
+}
+.EnergyGenrationStorage button {
+  padding: 20px;
+  width: 200px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #08c06a;
+  color: white;
+  border: none;
+  margin-left: 50px;
+}
+
+.EnergyEfficiency button {
+  padding: 20px;
+  width: 210px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #08c06a;
+  color: white;
+  border: none;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+.SmartHomeTechnology button {
+  padding: 20px;
+  width: 210px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #08c06a;
+  color: white;
+  border: none;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+
+#mybackgroundimage2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1; /* Ensure video appears behind content */
+  overflow: hidden;
+}
+
+.paragraphquote {
+  background-color: white;
+  width: 50%;
+  padding: 10px;
+  margin-left: 300px;
+  margin-right: 100px;
+  margin-top: -80px;
+  border-radius: 100px;
+}
+.paragraphquote p {
+  margin-left: 20px;
+  text-align: center;
+}
+/* stylesheets/quote.css */
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 50px;
+  margin-right: 20px;
+}
+.testimonials img {
+  padding-bottom: 20px;
+  max-width: 400px;
+}
+#David {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.discount {
+  display: flex;
+  flex: row;
+}
+.discount img {
+  max-width: 300px;
+  margin-top: -60px;
+}
+.discountparagraph {
+  background-color: #08c06a;
+  text-align: center;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  width: 20%;
+  height: 20%;
+}
+#QuotePower {
+  max-width: 50%;
+  margin-right: 20px;
+  margin-left: -20px;
+  margin-bottom: 40px;
+  border-radius: 70px;
+}
+.Heading {
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  line-height: 2rem;
+}
+.discountparagraph button {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 20px;
+  border: none;
+  border-radius: 20px;
+  background-color: #c7a55e;
+}
+
+.discountparagraph button a {
+  text-decoration: none;
+  color: black;
+}

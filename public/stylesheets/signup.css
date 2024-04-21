@@ -7,7 +7,7 @@ html {
 nav {
   display: flex;
   justify-content: flex-start;
-  padding: 20px;
+  padding: 10px;
   background-color: #08c06a;
 }
 nav a {
@@ -44,6 +44,8 @@ label {
 
 input[type="text"],
 input[type="email"],
+input[type="password"],
+input[type="confirmPass"],
 textarea {
   width: 50%;
   padding: 10px;
