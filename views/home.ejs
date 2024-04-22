@@ -14,19 +14,61 @@
 
     <main>
       <div class="call-to-action">
-        <button id="start-test">Test Your Knowledge!</button>
+        <a href="/Quote" id="start-test">Get a Free Quote!</a>
       </div>
       <div class="intro">
+        <div class="video-container">
+          <video id="myVideo" autoplay muted loop>
+            <source src="videos/EcoVolt.mp4" type="video/mp4" />
+          </video>
+        </div>
         <h3>WELCOME TO ECOVOLT</h3>
         <h1>Go Green, Live Green: 100% Renewable Energy</h1>
-        <p>
-          Live green starts at home. Choose 100% renewable energy to power your
-          home and reduce your environmental impact. Together, let's create a
-          healthier planet for generations to come.
-        </p>
-        <button class="intro"><a href="#Get a Quote">Get a Quote</a></button>
+
+        <button class="intro"><a href="/Quote">Get a Quote</a></button>
         <button><a href="#benefits">Discover More</a></button>
+        <div class="learnmore">
+          <p>
+            Live green starts at home. Choose 100% renewable energy to power
+            your home and reduce your environmental impact. Together, let's
+            create a healthier planet for generations to come.
+          </p>
+          <button><a href="/projects">Explore Our Work</a></button>
+          <!-- This Explore our Work link will lead to soem of the projects that we have done  -->
+        </div>
+      </div>
+      <div class="hero">
+        <h2>Let EcoVolt Show You the Brighter Side of Energy</h2>
+        <p>
+          Frustrated with rising energy costs and the environmental impact of
+          fossil fuels? EcoVolt offers a brighter solution. Our clean and
+          reliable solar power systems can significantly reduce your reliance on
+          the grid, saving you money in the long run while helping you make a
+          positive impact on the planet. <br />Let EcoVolt show you how sunshine
+          can power your home and business to create a brighter future for you
+          and the environment.
+          <br />
+          <br />
+          <button><a href="#contact us">Contact Us</a></button>
+        </p>
+        <img src="images/solar.jpg" alt="solarinstall" />
+      </div>
+      <div class="contactus" id="contact us">
+        <h1>Contact Us</h1>
+        <form action="/submit-service-request" method="post">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required /><br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required /><br />
+          <label for="phone">Phone Number (Optional):</label>
+          <input type="tel" id="phone" name="phone" /><br />
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea
+          ><br />
+          <button type="submit">Submit</button>
+        </form>
       </div>
     </main>
+    <nav><%- include("_footer.ejs") %></nav>
   </body>
 </html>

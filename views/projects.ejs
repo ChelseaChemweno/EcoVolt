@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects:EcoVolt</title>
+    <link rel="stylesheet" href="stylesheets/projects.css" />
+  </head>
+  <body>
+    <nav><%- include("_nav.ejs") %></nav>
+    <main>
+      <h2>Our Projects</h2>
+      <div class="call-to-action">
+        <a href="/Quote" id="start-test">Get a Free Quote!</a>
+      </div>
+      <div class="project-categories">
+        <ul>
+          <li><a href="#commercial-projects">Commercial Projects</a></li>
+          <li><a href="#residential-projects">Residential Projects</a></li>
+          <li><a href="#government-projects">Government Projects</a></li>
+        </ul>
+      </div>
+
+      <div id="commercial-projects">
+        <h3>Commercial Projects</h3>
+        <div class="project-list">
+          <div class="project">
+            <img
+              src="images/SolarPanelGreenTech.jpg"
+              alt="Solar Panel Green Tech"
+            />
+            <h4>Project Name: Solar Panel Installation for GreenTech Inc.</h4>
+            <p>Location: Meru</p>
+            <p>Status: Completed</p>
+            <p class="project-description">
+              EcoVolt partnered with GreenTech Inc. to install a solar panel
+              system that significantly reduces their reliance on grid-based
+              electricity. This project helps GreenTech achieve their
+              sustainability goals and save on energy costs.
+            </p>
+          </div>
+          <div class="project">
+            <img src="images/Evchargingmall (2).jpg" alt="Evchargingmall" />
+            <h4>
+              Project Name: EV Charging Station Installation for Shopping Mall
+            </h4>
+            <p>Location: Nairobi</p>
+            <p>Status: In Progress</p>
+            <p class="project-description">
+              EcoVolt is currently installing EV charging stations at a shopping
+              mall in Nairobi, promoting the adoption of electric vehicles and
+              providing a convenient charging option for eco-conscious shoppers.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="residential-projects">
+        <h3>Residential Projects</h3>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/HomeBattery.jpg" alt="HomeBattery" />
+            <h4>Project Name: Home Battery Storage System Installation</h4>
+            <p>Location: Uasin Gishu</p>
+            <p>Status: In Progress</p>
+            <p class="project-description">
+              EcoVolt is installing a home battery storage system for a
+              residence in Uasin Gishu. This system allows the homeowner to
+              store excess solar energy generated during the day and use it at
+              night, increasing energy independence and reducing reliance on the
+              grid.
+            </p>
+          </div>
+          <div class="project">
+            <img src="images/SingleFamilySolarInstallation.jpg" alt="" />
+            <h4>
+              Project Name: Solar Roof Installation for Single-Family Home
+            </h4>
+            <p>Location:Nakuru County</p>
+            <p>Status: Completed</p>
+            <p class="project-description">
+              EcoVolt successfully installed a solar roof on a single-family
+              home in Nakuru County. This project helps the homeowner generate
+              clean energy, lower electricity bills, and contribute to a
+              sustainable future.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div id="government-projects">
+        <h3>Government Projects</h3>
+        <div class="project-list">
+          <div class="project">
+            <img src="images/MunicipalSolar.jpg" alt="MunicipalSolar" />
+            <h4>
+              Project Name: Solar Roof Installation for Municipal Building
+            </h4>
+            <p>Location: Kakamega</p>
+
+            <p>Status: Pending</p>
+            <p class="project-description">
+              EcoVolt is proposing a solar roof installation project for a
+              municipal building in Kakamega. This project would help the
+              government save on energy costs and promote the use of renewable
+              energy in public buildings.
+            </p>
+          </div>
+          <div class="project">
+            <img src="images/SolarStreetLight.jpg" alt="SolarStreetLighting" />
+            <h4>Project Name: Solar Streetlight Installation for Community</h4>
+            <p>Location: Machakos</p>
+            <p>Status: Completed</p>
+            <p class="project-description">
+              EcoVolt successfully installed solar streetlights in a community
+              in Machakos. This project improves nighttime visibility, enhances
+              public safety, and reduces reliance on grid-based electricity for
+              street lighting. The project also promotes a sustainable approach
+              to community development.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <nav><%- include("_footer.ejs") %></nav>
+</html>

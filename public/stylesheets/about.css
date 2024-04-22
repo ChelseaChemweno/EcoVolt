@@ -19,6 +19,27 @@ nav a {
   text-decoration: none;
   size: 20px;
 }
+.call-to-action {
+  position: fixed; /* Ensures button stays visible when scrolling */
+  top: 20px;
+  right: 20px;
+  background-color: #4caf50; /* Green color */
+
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+  transition: all 0.2s ease-in-out; /* Smooth hover effect */
+}
+
+.call-to-action:hover {
+  background-color: #c7a55e; /* Darker green on hover */
+}
+.call-to-action a {
+  color: white;
+  text-decoration: none;
+}
 .mission_vision {
   margin-top: 50px;
   text-align: center;

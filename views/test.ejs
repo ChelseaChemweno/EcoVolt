@@ -3,31 +3,249 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <title>EcoVolt: Powering a Sustainable Future</title>
-    <link rel="stylesheet" href="stylesheets/home.css" />
+    <title>EcoVolt - Test Your Renewable Energy Knowledge!</title>
+    <link rel="stylesheet" href="stylesheets/test.css" />
   </head>
-
   <body>
-    <!-- //put the image without the background -->
-    <nav><%- include("_nav.ejs") %></nav>
+    <header>
+      <h1>EcoVolt - Renewable Energy Knowledge Test</h1>
+    </header>
 
     <main>
-      <div class="call-to-action">
-        <a href="#" id="start-test">Test Your Knowledge!</a>
-      </div>
-
-      <div class="intro">
-        <h3>WELCOME TO ECOVOLT</h3>
-        <h1>Go Green, Live Green: 100% Renewable Energy</h1>
-        <p>
-          Live green starts at home. Choose 100% renewable energy to power your
-          home and reduce your environmental impact. Together, let's create a
-          healthier planet for generations to come.
-        </p>
-        <button class="intro"><a href="#Get a Quote">Get a Quote</a></button>
-        <button><a href="#benefits">Discover More</a></button>
+      <p>
+        Take this short quiz to see how much you know about renewable energy
+        sources and their benefits.
+      </p>
+      <div id="question-container">
+        <ul>
+          <li>
+            <h2>
+              Question 1: Which of the following is NOT a renewable energy
+              source?
+            </h2>
+            <ul class="answer-options">
+              <li>
+                <input type="radio" name="question1" id="answer1a" value="a" />
+                Solar power
+              </li>
+              <li>
+                <input type="radio" name="question1" id="answer1b" value="b" />
+                Coal
+              </li>
+              <li>
+                <input type="radio" name="question1" id="answer1c" value="c" />
+                Wind power
+              </li>
+              <li>
+                <input type="radio" name="question1" id="answer1d" value="d" />
+                Hydropower
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h2>
+              Question 2: What is the primary societal benefit of transitioning
+              to a renewable energy-based power grid?
+            </h2>
+            <ul class="answer-options">
+              <li>
+                <input type="radio" name="question2" id="answer2a" value="a" />
+                Reduced dependence on fossil fuels
+              </li>
+              <li>
+                <input type="radio" name="question2" id="answer2b" value="b" />
+                Lower greenhouse gas emissions and climate change mitigation
+              </li>
+              <li>
+                <input type="radio" name="question2" id="answer2c" value="c" />
+                Improved air quality and public health
+              </li>
+              <li>
+                <input type="radio" name="question2" id="answer2d" value="d" />
+                All of the above
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h2>
+              Question 3: Which of the following factors most significantly
+              affects the efficiency of solar panels?
+            </h2>
+            <ul class="answer-options">
+              <li>
+                <input type="radio" name="question3" id="answer3a" value="a" />
+                The angle of the panels towards the sun
+              </li>
+              <li>
+                <input type="radio" name="question3" id="answer3b" value="b" />
+                The color of the solar panel frames
+              </li>
+              <li>
+                <input type="radio" name="question3" id="answer3c" value="c" />
+                The brand of the solar panel manufacturer
+              </li>
+              <li>
+                <input type="radio" name="question3" id="answer3d" value="d" />
+                The presence of nearby buildings
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h2>
+              Question 4:What is the biggest challenge associated with storing
+              energy generated from renewable sources like solar and wind?
+            </h2>
+            <ul class="answer-options">
+              <li>
+                <input type="radio" name="question4" id="answer4a" value="a" />
+                The cost of batteries or other storage solutions
+              </li>
+              <li>
+                <input type="radio" name="question4" id="answer4b" value="b" />
+                The environmental impact of large-scale storage facilities
+              </li>
+              <li>
+                <input type="radio" name="question4" id="answer4c" value="c" />
+                The limited lifespan of battery storage systems
+              </li>
+              <li>
+                <input type="radio" name="question4" id="answer4d" value="d" />
+                All of the above
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h2>
+              Question 5:Describe the difference between "grid-tied" and
+              "off-grid" solar power systems.
+            </h2>
+            <ul class="answer-options">
+              <li>
+                <input type="radio" name="question5" id="answer5a" value="a" />
+                Grid-tied systems store excess energy, while off-grid systems
+                don't.
+              </li>
+              <li>
+                <input type="radio" name="question5" id="answer5b" value="b" />
+                Off-grid systems are connected to the national electricity grid,
+                while grid-tied systems are not.
+              </li>
+              <li>
+                <input type="radio" name="question5" id="answer5c" value="c" />
+                Grid-tied systems are more efficient at generating electricity,
+                while off-grid systems are more reliable.
+              </li>
+              <li>
+                <input type="radio" name="question5" id="answer5d" value="d" />
+                Off-grid systems are typically used for larger commercial
+                buildings, while grid-tied systems are better suited for
+                residential use.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h2>
+              Question 6 :What is the main difference between a photovoltaic
+              (PV) solar panel and a concentrated solar power (CSP) plant?
+            </h2>
+            <ul class="answer-options">
+              <li>
+                <input type="radio" name="question6" id="answer6a" value="a" />
+                PV panels directly convert sunlight into electricity, while CSP
+                uses mirrors to focus sunlight for heat generation.
+              </li>
+              <li>
+                <input type="radio" name="question6" id="answer6b" value="b" />
+                PV panels are more efficient in low-light conditions compared to
+                CSP plants.
+              </li>
+              <li>
+                <input type="radio" name="question6" id="answer6c" value="c" />
+                CSP plants require less maintenance compared to PV panels.
+              </li>
+              <li>
+                <input type="radio" name="question6" id="answer6d" value="d" />
+                PV panels are better suited for large-scale electricity
+                generation than CSP plants.
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h2>
+              Question 7: What is the role of a biomass power plant in the
+              energy production cycle?
+            </h2>
+            <ul class="answer-options">
+              <li>
+                <input type="radio" name="question7" id="answer7a" value="a" />
+                It converts organic matter like wood chips into electricity.
+              </li>
+              <li>
+                <input type="radio" name="question7" id="answer7b" value="b" />
+                It stores excess energy generated from renewable sources.
+              </li>
+              <li>
+                <input type="radio" name="question7" id="answer7c" value="c" />
+                It filters and cleans emissions from fossil fuel power plants.
+              </li>
+              <li>
+                <input type="radio" name="question7" id="answer7d" value="d" />
+                It uses geothermal heat to generate steam for electricity
+                production.
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </main>
+    <script>
+      const questionContainer = document.getElementById("question-container");
+      const questions = questionContainer.querySelectorAll("li");
+      let currentQuestion = 0; // Track current question index
+
+      function showNextQuestion() {
+        // Hide current question
+        questions[currentQuestion].classList.remove("current-question");
+
+        // Check if there are more questions
+        if (currentQuestion < questions.length - 1) {
+          currentQuestion++; // Move to next question index
+          questions[currentQuestion].classList.add("current-question"); // Display next question
+
+          // Enable "Next Question" button after answering current question
+          document.getElementById("submit-answer").disabled = false;
+        } else {
+          // Handle completion of all questions (optional: display results)
+          console.log("All questions answered!"); // Replace with your logic for handling completion
+        }
+      }
+
+      // Event listener for submitting answer (replace with your answer checking logic)
+      document.getElementById("submit-answer").addEventListener("click", () => {
+        // Check answer selection (example: assuming radio buttons)
+        const selectedOption = questionContainer.querySelector(
+          'input[type="radio"]:checked'
+        );
+        if (selectedOption) {
+          console.log("Selected answer:", selectedOption.value); // Replace with answer checking logic
+          showNextQuestion(); // Move to next question after answer selection
+        } else {
+          alert("Please select an answer before proceeding.");
+        }
+      });
+    </script>
+    <!-- <script src="scripts/test.js"></script> -->
   </body>
 </html>

@@ -14,11 +14,8 @@
     <nav><%- include("_nav.ejs") %></nav>
 
     <main>
-      <div class="SideNav">
-        <a href="Our Story">Our Story</a>
-        <a href="The Team">The Team</a>
-        <a href="What We Do">What We Do</a>
-        <a href="Why Choose Us">Why Choose Us</a>
+      <div class="call-to-action">
+        <a href="/Quote" id="start-test">Get a Free Quote!</a>
       </div>
       <div class="intro">
         <h2>
@@ -56,34 +53,43 @@
         <h2>Meet Our Team!</h2>
         <div class="team-members">
           <div class="team-member">
+            <img src="images/EcoVoltChelsea.png" alt="Chelsea">
             <h3>Chelsea Chemweno</h3>
             <p>Founder, CEO & Director</p>
             </div>
           <div class="team-member">
+            <img src="images/EcoVoltDavid.png" alt="David">
             <h3>David Lee</h3>
             <p>Chief Technology Officer</p>
             </div>
           <div class="team-member">
+            <img src="images/EcoVoltSarah.png" alt="Sarah">
             <h3>Sarah Jones</h3>
             <p>Project Manager</p>
             </div>
           <div class="team-member">
+            <img src="images/EcoVoltMichael.png" alt="Michael">
             <h3>Michael Brown</h3>
             <p>Sales Director</p>
             </div>
+           
           <div class="team-member">
+            <img src="images/EcoVoltEmily.png" alt="Emily">
             <h3>Emily Garcia</h3>
             <p>Marketing Manager</p>
             </div>
           <div class="team-member">
+            <img src="images/EcoVoltChen.png" alt="Chen">
             <h3>Chen Wu</h3>
             <p>Electrical Engineer</p>
             </div>
           <div class="team-member">
+            <img src="images/EcoVoltAntnio.png" alt="Antonio">
             <h3>Antonio Rodriguez</h3>
             <p>Customer Service Representative</p>
             </div>
           <div class="team-member">
+            <img src="images/EcoVoltKatherine.png" alt="Katherine">
             <h3>Katherine Miller</h3>
             <p>Sustainability Analyst</p>
             </div>
@@ -107,7 +113,7 @@
               </p>
             </div>
 
-            <div class="solution-item">
+            <div class="solution-item" id="windTurbine">
               <h3>Wind Turbine Installation</h3>
               <p>
                 Harness the power of the wind with our expert wind turbine
@@ -126,47 +132,6 @@
               </p>
             </div>
           </div>
-
-          <div class="services">
-            <h4>Our Services Include:</h4>
-            <ul>
-              <li>
-                <a href="Free consultations and energy audits"
-                  >Free consultations and energy audits</a
-                >
-              </li>
-              <li>
-                <a href="System design and engineering"
-                  >System design and engineering</a
-                >
-              </li>
-              <li>
-                <a href="Permitting and approval assistance"
-                  >Permitting and approval assistance</a
-                >
-              </li>
-              <li>
-                <a
-                  href="Equipment procurement and
-               installation"
-                  >Equipment procurement and installation</a
-                >
-              </li>
-              <li>
-                <a href="System monitoring and maintenance"
-                  >System monitoring and maintenance</a
-                >
-              </li>
-              <li>
-                <a
-                  href="Financing options and incentives
-                guidance"
-                  >Financing options and incentives guidance</a
-                >
-              </li>
-            </ul>
-          </div>
-
           <p>
             We understand that every project is unique. We work closely with you
             to design a customized solution that fits your budget and goals. Our
@@ -197,4 +162,5 @@
       </div>
     </main>
   </body>
+  <nav><%- include("_footer.ejs") %></nav>
 </html>

@@ -3,30 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>EcoVolt: Powering a Sustainable Future</title>
     <link rel="stylesheet" href="stylesheets/login.css" />
   </head>
-
   <body>
-    <!-- //put the image without the background -->
+    <!-- Put the image without the background -->
     <nav><%- include("_nav.ejs") %></nav>
 
     <main>
       <div class="login-form">
         <h2>EcoVolt Login</h2>
+        <% if(locals.message){ %>
+        <p style="color: orangered"><%= locals.message %></p>
+        <% } %> <% if(locals.error){ %>
         <form action="/login" method="post">
-          <label for="username">Username:</label>
-          <input type="text" id="username" name="username" required />
-          <br />
-          <label for="password">Password:</label>
-          <input type="password" id="password" name="password" required />
-          <br />
+          <div>
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              value="<%= locals.prevInput.email %>"
+              required
+            />
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              value="<%= locals.prevInput.password %>"
+              required
+            />
+          </div>
           <button type="submit">Login</button>
           <br />
           <a href="#">Forgot Password?</a>
         </form>
+        <% } else { %>
+        <form action="/login" method="post">
+          <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required />
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required />
+          </div>
+          <button type="submit">Login</button>
+          <br />
+          <a href="#">Forgot Password?</a>
+        </form>
+        <% } %>
       </div>
     </main>
+
+    <nav><%- include("_footer.ejs") %></nav>
   </body>
 </html>

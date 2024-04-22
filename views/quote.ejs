@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get a Free Quote | EcoVolt</title>
+    <link rel="stylesheet" href="stylesheets/quote.css" />
+  </head>
+  <nav><%- include("_nav.ejs") %></nav>
+
+  <body>
+    <img
+      src="images/BackgroundImage2.png"
+      id="mybackgroundimage2"
+      alt="BackgroundImage2"
+    />
+    <h1>Get a Free Quote for Your Eco-Friendly Needs</h1>
+
+    <div class="Service">
+      <div class="EnergyGenrationStorage">
+        <h2>Energy Generation and Storage</h2>
+
+        <!-- <form action="form-handler.php" method="post"> -->
+        <button><a href="/EnergyGenerationStorage">Quote</a></button>
+      </div>
+      <div class="EnergyEfficiency">
+        <h2>Energy Efficiency</h2>
+
+        <!-- <form action="form-handler.php" method="post"> -->
+        <button><a href="/EnergyEfficiency"></a>Quote</button>
+      </div>
+      <div class="SmartHomeTechnology">
+        <h2>Smart Home Technology</h2>
+
+        <!-- <form action="form-handler.php" method="post"> -->
+        <button><a href="/SmartHomeTechnology"></a>Quote</button>
+      </div>
+    </div>
+    <div class="paragraphquote">
+      <p>Let EcoVolt help you save money and switch to clean energy.</p>
+      <p>Get a personalized quote for your chosen project.</p>
+    </div>
+    <div class="testimonials">
+      <img src="images/TestimonialsOne.png" alt="" />
+      <img src="/images/TestimonialTwo.png" id="David" alt="" />
+      <img src="images/TestimonialThree.png" alt="" />
+    </div>
+    <h1>Enjoy 20% Disount</h1>
+    <div class="discount">
+      <img src="images/PhoneMockUpEcovolt.png" alt="" />
+      <div class="discountparagraph">
+        <p>
+          All our referee clients get to have a 20% discount off for each of the
+          services that they want
+          <br />
+          <button><a href="/Quote">Get A Free Quote</a></button>
+        </p>
+        <div class="Heading">
+          <h1>Get All Your Energy Needs Today!</h1>
+        </div>
+      </div>
+      <img src="images/QuoteEcoVolt.jpg" id="QuotePower" alt="" />
+    </div>
+
+    <nav><%- include("_footer.ejs") %></nav>
+  </body>
+
+  <script src="JavaScript/quote.js"></script>
+</html>
