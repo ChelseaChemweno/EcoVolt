@@ -1,0 +1,59 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+body {
+  position: relative; /* Needed for absolute positioning */
+  height: 100vh; /* Set body height to 100% viewport height */
+  margin: 0; /* Remove default body margin */
+}
+
+nav {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  background-color: #08c06a;
+}
+nav a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  size: 20px;
+}
+
+form {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+  text-align: center;
+  margin-left: 80px;
+  margin-right: 80px;
+  background-color: #c7a55e;
+}
+form input {
+  width: 35%;
+  margin-bottom: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px; /* Rounded corners for input fields */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
+form button {
+  width: 20%;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #4caf50; /* EcoVolt green color */
+  color: white;
+  border: none;
+  border-radius: 3px; /* Rounded corners for button */
+  cursor: pointer; /* Indicate clickable element */
+}
+
+select {
+  margin-bottom: 20px;
+  padding: 10px;
+}
