@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GetQuote</title>
+    <link rel="stylesheet" href="/stylesheets/getquote.css" />
+  </head>
+  <body>
+    <nav><%- include("_nav.ejs") %></nav>
+    <form action="/quotes/1" method="post">
+      <h1>Unlock Hidden Savings: Get a Free EcoVolt Quote Today!</h1>
+
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <div>
+        <label for="phone">Telephone:</label>
+        <input type="phone" id="phone" name="phone" required />
+      </div>
+      <div>
+        <label for="project">Select Project:</label>
+        <select id="project" name="project" required>
+          <% data.forEach(function(project) { %>
+          <option value="<%= project.Project_Id %>">
+            <%= project.Project_name %>
+          </option>
+          <% }); %>
+        </select>
+      </div>
+      <label for="payment_method">Payment Method:</label>
+      <select name="payment_method" id="payment_method">
+        <option value="cash">cash</option>
+        <option value="cheque">cheque</option>
+        <option value="credit">credit</option>
+      </select>
+      <div>
+        <button type="submit">Get Quote</button>
+      </div>
+    </form>
+  </body>
+  <nav><%- include("_footer.ejs") %></nav>
+</html>
+<!-- <script>
+  // JavaScript to dynamically update estimated cost based on project selection
+  document.getElementById("project").addEventListener("change", function () {
+    // Get the selected project ID
+    var projectId = this.value;
+
+    // Fetch the estimated cost for the selected project using AJAX
+    fetch("/get-estimated-cost/" + projectId)
+      .then((response) => response.json())
+      .then((data) => {
+        document.getElementById("estimatedCost").innerHTML =
+          "<p>Estimated Cost: $" + data.estimatedCost + "</p>";
+      })
+      .catch((error) => console.error("Error fetching estimated cost:", error));
+  });
+</script> -->
+<!-- <% data.forEach(function(project) { %>
+      <div class="quotedivs">
+        <h2><%= project.Project_name %></h2>
+        <h2><%=project.Project_Description %></h2>
+        <p><%= project.Estimated_cost %></p>
+      </div>
+      <% }); %> -->

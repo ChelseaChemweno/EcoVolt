@@ -17,24 +17,12 @@
     <h1>Get a Free Quote for Your Eco-Friendly Needs</h1>
 
     <div class="Service">
-      <div class="EnergyGenrationStorage">
-        <h2>Energy Generation and Storage</h2>
-
-        <!-- <form action="form-handler.php" method="post"> -->
-        <button><a href="/EnergyGenerationStorage">Quote</a></button>
+      <% data.forEach(function(quote) { %>
+      <div class="quotedivs">
+        <h2><%= quote.quote_name %></h2>
+        <a href="/quotes/<%= quote.quote_id %>" class="button">View More</a>
       </div>
-      <div class="EnergyEfficiency">
-        <h2>Energy Efficiency</h2>
-
-        <!-- <form action="form-handler.php" method="post"> -->
-        <button><a href="/EnergyEfficiency"></a>Quote</button>
-      </div>
-      <div class="SmartHomeTechnology">
-        <h2>Smart Home Technology</h2>
-
-        <!-- <form action="form-handler.php" method="post"> -->
-        <button><a href="/SmartHomeTechnology"></a>Quote</button>
-      </div>
+      <% }); %>
     </div>
     <div class="paragraphquote">
       <p>Let EcoVolt help you save money and switch to clean energy.</p>
