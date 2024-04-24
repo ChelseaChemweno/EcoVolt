@@ -169,13 +169,74 @@ app.get("/test", (req, res) => {
 app.get("/shop", (req, res) => {
   res.render("shop.ejs");
 });
-
 app.get("/Quote", (req, res) => {
-  res.render("quote.ejs");
+  let sql = "SELECT * FROM Quotes";
+  myConnection.query(sql, (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(data);
+      res.render("quote.ejs", { data: data });
+    }
+  });
 });
-app.get("/EnergyGenerationStorage", (req, res) => {
-  res.render("EnergyGenrationStrorage.ejs");
+app.get("/quotes/:quoteID", (req, res) => {
+  let id = req.params.quoteID;
+  let sql = `SELECT * FROM Projects WHERE quote_id = ${id}`;
+  myConnection.query(sql, (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      console.log(data);
+      res.render("getquote.ejs", { data: data });
+    }
+  });
 });
+app.post("/quotes/1", (req, res) => {
+  const { name, email, phone, project, payment_method } = req.body;
+
+  const sql = `SELECT Estimated_cost FROM Projects WHERE Project_Id = ?`;
+  myConnection.query(sql, [project], (err, result) => {
+    if (err) {
+      console.error("Error fetching estimated cost:", err);
+      res.status(500).send("Error fetching estimated cost");
+    } else {
+      const estimatedCost = result[0].Estimated_cost;
+
+      const insertBookingQuery = `INSERT INTO Bookings (email, Project_Id, payment_method, booking_status, estimatedCost, name) VALUES (?, ?, ?, ?, ?, ?)`;
+      myConnection.query(
+        insertBookingQuery,
+        [email, project, payment_method, "checkedIn", estimatedCost, name],
+        (err, result) => {
+          if (err) {
+            console.error("Error inserting booking data:", err);
+            res.status(500).send("Error inserting booking data");
+          } else {
+            console.log("Booking data inserted successfully");
+            res.redirect("/"); // Redirect to a success page
+          }
+        }
+      );
+    }
+  });
+});
+
+// app.get("/get-estimated-cost/:projectId", (req, res) => {
+//   const projectId = req.params.projectId;
+
+//   // Query the database to fetch the estimated cost for the selected project
+//   const sql = `SELECT Estimated_cost FROM Projects WHERE Project_Id = ?`;
+//   myConnection.query(sql, [projectId], (err, result) => {
+//     if (err) {
+//       console.error("Error fetching estimated cost:", err);
+//       res.status(500).json({ error: "Error fetching estimated cost" });
+//     } else {
+//       // Return the estimated cost as JSON response
+//       res.json({ estimatedCost: result[0].Estimated_cost });
+//     }
+//   });
+// });
+
 app.listen(3000, () => {
   console.log("Server is running on port 3000");
 });
