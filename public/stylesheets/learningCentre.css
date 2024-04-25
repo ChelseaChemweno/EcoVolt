@@ -17,6 +17,9 @@ nav a {
   text-decoration: none;
   size: 20px;
 }
+#profile {
+  margin-left: 500px;
+}
 
 main {
   padding: 50px 0;

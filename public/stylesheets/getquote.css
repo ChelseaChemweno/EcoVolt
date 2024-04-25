@@ -22,6 +22,9 @@ nav a {
   text-decoration: none;
   size: 20px;
 }
+#profile {
+  margin-left: 500px;
+}
 
 form {
   margin-top: 50px;

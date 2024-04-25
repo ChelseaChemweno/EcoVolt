@@ -21,6 +21,9 @@ nav a {
   text-decoration: none;
   size: 20px;
 }
+#profile {
+  margin-left: 500px;
+}
 .product-categories {
   display: flex; /* Arrange navigation items horizontally */
   justify-content: start; /* Distribute items evenly */

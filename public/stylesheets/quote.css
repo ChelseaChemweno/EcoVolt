@@ -29,56 +29,17 @@ nav a {
   margin-bottom: 100px;
 }
 
-.EnergyGenrationStorage {
+.quotedivs {
   width: 50%;
   padding: 30px;
   margin-left: 20px;
   margin-right: 20px;
   border-radius: 30px;
   background-color: white;
-}
-.EnergyEfficiency {
-  width: 50%;
-  padding: 30px;
-  margin-left: 20px;
-  margin-right: 20px;
-  border-radius: 30px;
-  box-shadow: black;
-  background-color: white;
-}
-.SmartHomeTechnology {
-  width: 50%;
-  padding: 30px;
-  margin-right: 20px;
-  margin-left: 20px;
-  border-radius: 30px;
-  background-color: white;
-}
-.EnergyGenrationStorage button {
-  padding: 20px;
-  width: 200px;
-  height: 50px;
-  border-radius: 20px;
-  background-color: #08c06a;
-  color: white;
-  border: none;
-  margin-left: 50px;
 }
 
-.EnergyEfficiency button {
-  padding: 20px;
-  width: 210px;
-  height: 50px;
-  border-radius: 20px;
-  background-color: #08c06a;
-  color: white;
-  border: none;
-  margin-left: 50px;
-  margin-top: 30px;
-}
-
-.SmartHomeTechnology button {
-  padding: 20px;
+.quotedivs .button {
+  padding: 5px 20px;
   width: 210px;
   height: 50px;
   border-radius: 20px;
@@ -123,6 +84,8 @@ nav a {
   margin-right: 20px;
 }
 .testimonials img {
+  display: block;
+
   padding-bottom: 20px;
   max-width: 400px;
 }

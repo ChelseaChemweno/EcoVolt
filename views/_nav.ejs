@@ -4,10 +4,17 @@
   <a href="/About">About</a>
   <a href="/Learning_Centre">Learning Centre</a>
   <a href="/projects">Projects</a>
-  <a href="/login">Login</a>
-  <a href="/SignUp">SignUp</a>
+
   <a href="/shop"><ion-icon name="cart-outline"></ion-icon> Shop</a>
+  <% if(locals.user){%>
+  <a href="/profile" id="profile"> <%= locals.user.name.split(" ")[0] %> </a>
+  <a href="/logout">Logout</a>
+  <% } else{%>
+  <a href="/login">Login </a>
+  <a href="/SignUp">SignUp</a>
+  <%}%>
 </nav>
+
 <script
   type="module"
   src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"

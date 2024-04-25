@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="/images/EcoVolt Logo.png"
+      type="image/x-icon"
+    />
+    <title>Profile-EcoVolt</title>
+    <link rel="stylesheet" href="/stylesheets/profiles.css" />
+  </head>
+  <body>
+    <%- include("_nav.ejs") %>
+    <main>
+      <section>
+        <h1><%= locals.user.name.split(" ")[0] %> Here is Your Reciept</h1>
+        <br />
+        <% if (projects.length > 0) { %>
+        <h2>Your Current Project</h2>
+        <% projects.forEach((booking) => { %>
+        <p><%= booking.Project_name %></p>
+        <p><%= booking.Estimated_cost %></p>
+        <p><%= booking.payment_method %></p>
+        <p><%= booking.booking_status %></p>
+        <% }) %> <% } else { %>
+        <p>You currently have no ongoing projects.</p>
+        <% } %>
+      </section>
+    </main>
+
+    <nav><%- include("_footer.ejs") %></nav>
+  </body>
+</html>

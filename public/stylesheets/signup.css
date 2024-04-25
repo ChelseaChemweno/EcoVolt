@@ -16,7 +16,9 @@ nav a {
   text-decoration: none;
   size: 20px;
 }
-
+#profile {
+  margin-left: 500px;
+}
 h1 {
   text-align: center;
   margin-bottom: 5px;

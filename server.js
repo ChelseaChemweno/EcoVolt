@@ -37,6 +37,28 @@ app.use(
   })
 );
 app.use(cookieParser());
+// creating protected routes
+app.use((req, res, next) => {
+  const protectedRoutes = [, "/quotes/1", "/quotes/2", "/quotes/3", "/profile"];
+  if (req.session && req.session.user) {
+    res.locals.user = req.session.user;
+    next();
+  } else if (protectedRoutes.includes(req.path)) {
+    // set redirecthistroy cookie
+    let path = req.path;
+    if (Object.keys(req.query).length > 0) {
+      const queryString = new URLSearchParams(req.query).toString();
+      path += `?${queryString}`;
+    }
+    res.cookie("redirectHistory", path, {
+      maxAge: 1000 * 60 * 60 * 24, //Expires in 24 Hours
+      httpOnly: true, // Restricts access from client server -side in Js
+    });
+    res.redirect("/login?message=login");
+  } else {
+    next();
+  }
+});
 
 app.get("/", (req, res) => {
   res.render("home.ejs");
@@ -213,12 +235,36 @@ app.post("/quotes/1", (req, res) => {
             res.status(500).send("Error inserting booking data");
           } else {
             console.log("Booking data inserted successfully");
-            res.redirect("/"); // Redirect to a success page
+            res.redirect("/profile"); // Redirect to a success page
           }
         }
       );
     }
   });
+});
+
+app.get("/profile", (req, res) => {
+  const userEmail = req.session.email; // Assuming you have email in the session
+
+  // Fetch project information for each booking
+  const projectQuery =
+    "SELECT projects.Project_name, projects.Estimated_cost, bookings.payment_method, bookings.booking_status FROM projects JOIN bookings ON projects.Project_id = bookings.Project_id WHERE bookings.email = ?;";
+  myConnection.query(projectQuery, [userEmail], (err, projects) => {
+    if (err) {
+      console.error(err);
+      return res.status(500).render("500.ejs", {
+        message: "Server Error: Contact Admin if this persists",
+      });
+    }
+
+    res.render("profiles.ejs", {
+      projects: projects
+    });
+  });
+});
+
+app.get("/logout", (req, res) => {
+  res.render("logout.ejs");
 });
 
 // app.get("/get-estimated-cost/:projectId", (req, res) => {

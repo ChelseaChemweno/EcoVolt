@@ -21,6 +21,9 @@ nav a {
   text-decoration: none;
   size: 20;
 }
+#profile {
+  margin-left: 500px;
+}
 .call-to-action {
   position: fixed; /* Ensures button stays visible when scrolling */
   top: 20px;
